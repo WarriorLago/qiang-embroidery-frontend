@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/dingzhi.css">
+    <script src="./js/jquery-1.9.1.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="j-bigblock">
+        <div class="s-header whitebackground">
+            <div class="s-first-header blackline">
+                <div><img src="img/biaozhi.png" /><span class="blackfont">羌强</span><i class="blackfont">—</i><span
+                        class="blackfont">羌族刺绣的振兴与发展</span></div>
+                <div>
+                    <span class="data-time blackfont">2023-5-13</span>
+                    <span class="blackfont xingqi">星期四</span>
+
+                </div>
+            </div>
+            <div class="s-second-header">
+                <ul>
+                    <li><span class="blackfont"><a href="index.html">首页</a></span></li>
+                    <li><span class="blackfont"><a href="./guanyu.html">关于羌强</a></span></li>
+                    <li><span class="blackfont"><a href="./chanpin.html">产品介绍</a></span></li>
+                    <li class="boder-line"><span class="blackfont"><a href="./dingzhi.html">团队定制</a></span></li>
+                    <li><span class="blackfont"><a href="http://www.ihchina.cn/ziyuan">非遗介绍</a></span></li>
+                    <li><span class="blackfont"><a href="http://www.ihchina.cn/zixun">新闻资讯</a></span></li>
+                    <li><span class="blackfont"><a href="./lianxi.html">联系我们</a></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="j-content-block">
+            <div class="j-title-block">
+                <p>羌族刺绣产品定制表</p>
+            </div>
+            <div class="line-silver"></div>
+            <div style="padding-left: 493px;padding-right: 172px; ">
+                <form onSubmit　="return validateForm()" method="post">
+                    <ol style="line-height: 40px;font-size: 18px;">
+                        <li>
+                            <p>您的定制产品是？</p>
+                            <input type="radio" name="products" value="xiangbao" required>香包<br>
+                            <input type="radio" name="products" value="lingqianbao">零钱包<br>
+                            <input type="radio" name="products" value="shoujike">手机壳<br>
+                            <input type="radio" name="products" value="shoujike">古着商品<br>
+                            <input type="radio" name="products" value="shoujike">新品一类衣物<br>
+                            <input type="radio" name="products" value="shoujike">新品二类衣物<br>
+                            <input type="radio" name="products" value="shoujike">新品二类衣物
+                        </li>
+                        <li>
+                            <p>您的定制数量是？</p>
+                            <input type="radio" name="count" value="v1" required>100个
+                            <input type="radio" name="count" value="v2">100-500个
+                            <input type="radio" name="count" value="v3">500-1000个
+                            <input type="radio" name="count" value="v4">1000-2000个
+                            <input type="radio" name="count" value="v5">2000个以上
+                        </li>
+                        <li>
+                            <p>您是否之前定制过？</p>
+                            <input type="radio" name="used" value="v1" required>是
+                            <input type="radio" name="used" value="v2">不是
+                        </li>
+                        <li>
+                            <p>您期望使用的定制方式？（可多选）</p>
+                            <input type="checkbox" name="payment[]" value="v1">线下门店定制
+                            <input type="checkbox" name="payment[]" value="v2">线上小程序定制
+                            <input type="checkbox" name="payment[]" value="v3">线上网站定制
+                            <input type="checkbox" name="payment[]" value="v4">线上视频面谈定制
+                        </li>
+                        <li>
+                            <p>您倾向定制的特点?（可多选）</p>
+                            <input type="checkbox" name="functions[]" value="v1">色彩斑斓款<br>
+                            <input type="checkbox" name="functions[]" value="v2">带有个人logo<br>
+                            <input type="checkbox" name="functions[]" value="v3">带有更多非遗元素<br>
+                            <input type="checkbox" name="functions[]" value="v4">讲求性价比<br>
+                            <input type="checkbox" name="functions[]" value="v5">想要IP联名款<br>
+                            <input type="checkbox" name="functions[]" value="v6">追求简约设计<br>
+                            <input type="checkbox" name="functions[]" value="v7">私人定制
+                        </li>
+                    </ol>
+                    <br><br>
+                </form>
+
+                <div style=" margin-left: -100px; ">
+                    <label for="name">您的姓名：</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="position">您的邮件：</label>
+                    <input type="text" id="position" name="position" required>
+                    <label for="tel">联系电话：</label>
+                    <input type="tel" id="tel" name="tel" required>
+                    <button type="submit">提交</button>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
